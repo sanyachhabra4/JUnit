@@ -25,7 +25,7 @@ class EmailServiceTest {
     @Test
     void SendEmail_Returns_True_If_Mail_Sent() {
         Order newOrder = new Order();
-        String expected_CC="sriyash.jain@tothenew.com";
+        String expected_CC="sanya.chhabra@tothenew.com";
         EmailService emailService=EmailService.getInstance();
 
         boolean mailSend=emailService.sendEmail(newOrder,expected_CC);
